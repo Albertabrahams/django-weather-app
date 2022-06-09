@@ -30,7 +30,7 @@
                 <div class="col-md-6">
                     <h1 class="d-2 text-center m-5">Weather App</h1>
                     <form class="d-grid gap-4 mb-5 shadow p-5">
-                        <input class="form-control mt-3" type="text" name="city" placeholder="City name">
+                        <input class="form-control mt-3" type="text" name="name" placeholder="City name">
                         <input class="btn btn-success mb-3" type="submit" value="ADD">
                     </form>
                 </div>
@@ -40,7 +40,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <h3>{{ city.city }}</h3>
-                                <span>{{ city.temp }} <span>&#8451;</span></span>
+                                <span>{{ city.temp | floatformat:1 }} <span>&#8451;</span></span>
                             </div>
                             <div class="col-6">
                                 <h6>{{ city.desc }}</h6>
